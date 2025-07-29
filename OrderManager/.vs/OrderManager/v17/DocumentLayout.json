@@ -1,17 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wqrxysf\\source\\repos\\OrderManager\\",
+  "WorkspaceRootPath": "C:\\Users\\wqrxysf\\source\\tl-practice25\\OrderManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|c:\\users\\wqrxysf\\source\\repos\\ordermanager\\ordermanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|c:\\users\\wqrxysf\\source\\tl-practice25\\ordermanager\\ordermanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|solutionrelative:ordermanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|c:\\users\\wqrxysf\\source\\repos\\ordermanager\\ordermanager\\adminoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|solutionrelative:ordermanager\\adminoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|c:\\users\\wqrxysf\\source\\repos\\ordermanager\\ordermanager\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|c:\\users\\wqrxysf\\source\\tl-practice25\\ordermanager\\ordermanager\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7D52297-2729-4D46-8676-3D5D5ADC748A}|OrderManager\\OrderManager.csproj|solutionrelative:ordermanager\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 35,
+          "SelectedChildIndex": 33,
           "Children": [
             {
               "$type": "Bookmark",
@@ -153,31 +149,14 @@
               "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AdminOperation.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\OrderManager\\OrderManager\\AdminOperation.cs",
-              "RelativeDocumentMoniker": "OrderManager\\AdminOperation.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\OrderManager\\OrderManager\\AdminOperation.cs",
-              "RelativeToolTip": "OrderManager\\AdminOperation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T16:46:06.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Operation.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\OrderManager\\OrderManager\\Operation.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\tl-practice25\\OrderManager\\OrderManager\\Operation.cs",
               "RelativeDocumentMoniker": "OrderManager\\Operation.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\OrderManager\\OrderManager\\Operation.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\tl-practice25\\OrderManager\\OrderManager\\Operation.cs",
               "RelativeToolTip": "OrderManager\\Operation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T15:06:55.865Z",
               "EditorCaption": ""
@@ -186,11 +165,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\OrderManager\\OrderManager\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\tl-practice25\\OrderManager\\OrderManager\\Program.cs",
               "RelativeDocumentMoniker": "OrderManager\\Program.cs",
-              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\OrderManager\\OrderManager\\Program.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\tl-practice25\\OrderManager\\OrderManager\\Program.cs",
               "RelativeToolTip": "OrderManager\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T09:45:45.24Z",
               "EditorCaption": ""

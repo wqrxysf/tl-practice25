@@ -4,10 +4,8 @@
     {
         Initial = 0,
         Buy = 1,
-        List = 2,
-        AdminLogin = 4,
-        Exit = 3,
-        Null = 5,
+        Exit = 2,
+        Unknown = 5,
 
     }
 }
