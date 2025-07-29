@@ -1,1 +1,6 @@
 .vs/ 
+.vs/ 
+*.db 
+*.exe 
+bin/ 
+obj/ 
