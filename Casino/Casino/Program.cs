@@ -1,23 +1,25 @@
 ﻿using Casino;
 
+List<int> winningUserNumbers = [ 18, 19, 20 ];
+
+const double victoryMultiplicator = 0.2;
+
 const string casinoName = """
     ####   ##    ####  ####  #  #  ####
     #     #  #  #       ##   ## #  #  #
     #     ####   ####   ##   # ##  #  #
     #     #  #      #   ##   #  #  #  #
     ####  #  #  ####   ####  #  #  ####
+
     """;
 
-const string menuPosition = """
+const string casinoMenu = """
         M E N U
     1 - Play Casino;
     2 - Check Balance;
     3 - Exit;
-    Please, enter your choise: 
+    Please, enter your choice: 
     """;
-
-const double multiplicator = 0.2;
-
 
 PrintGameName( casinoName );
 int balance = GetBalance();
@@ -27,34 +29,32 @@ while ( operation != Operation.Exit )
 {
     try
     {
-        Console.Write( menuPosition );
-        operation = OperationRead();
+        Console.Write( casinoMenu );
+        operation = ReadOperation();
         if ( operation != null )
         {
-            HandleOperation( operation, ref balance );
+            balance = HandleOperation( operation, balance );
         }
         else
         {
-            throw new Exception( $"Unknow user command" );
+            continue;
         }
     }
     catch ( Exception e )
     {
         Console.WriteLine( $"Error detected: {e}" );
     }
-
 }
 
 static void PrintGameName( string gameName )
 {
     Console.WriteLine( gameName );
-    Console.WriteLine();
 }
 
 static int GetBalance()
 {
-    bool balanceCorrect = false;
-    while ( !balanceCorrect )
+    bool isCorrectBalance = false;
+    while ( !isCorrectBalance )
     {
         try
         {
@@ -62,13 +62,13 @@ static int GetBalance()
             string userBalance = Console.ReadLine();
             if ( !( int.TryParse( userBalance, out int balance ) ) )
             {
-                throw new Exception( $"Invalid balance value: {userBalance}" );
+                Console.WriteLine( $"Invalid balance value: {userBalance}" );
             }
             if ( balance <= 0 )
             {
-                throw new Exception( $"Your balance {balance} is too low..." );
+                Console.WriteLine( $"Your balance {balance} is too low..." );
             }
-            balanceCorrect = true;
+            isCorrectBalance = true;
             return balance;
         }
         catch ( Exception e )
@@ -79,42 +79,42 @@ static int GetBalance()
     return 0;
 }
 
-static Operation? OperationRead()
+static Operation? ReadOperation()
 {
     string operationStr = Console.ReadLine();
     bool isParsed = Enum.TryParse( operationStr, out Operation operation );
     return isParsed ? operation : null;
 }
 
-static void HandleOperation( Operation? operation, ref int balance )
+int HandleOperation( Operation? operation, int balance )
 {
     switch ( operation )
     {
-        case Operation.Initial:
-            return;
         case Operation.Play:
-            int bet = GetUserBet( ref balance );
+            int bet = GetUserBet( balance );
+            balance -= bet;
             balance += StartGame( bet );
-            break;
-        case Operation.CheckBalance:
+            return balance;
+        case Operation.PrintBalance:
             Console.WriteLine( $"Your balance: {balance}.\nWould you like to play?\n" );
-            break;
+            return balance;
         case Operation.Exit:
             Console.WriteLine( "Goodbye! We are waiting you for a new game!" );
             break;
         default:
             throw new Exception( $"Unsupported operation passed: {operation}" );
     }
+    return balance;
 }
 
-static int StartGame( int bet )
+int StartGame( int bet )
 {
-    int randomUserNumber = SetRandomNumber();
-    if ( randomUserNumber == 18 | randomUserNumber == 19 | randomUserNumber == 20 )
+    int randomUserNumber = GetRandomNumber();
+    if ( winningUserNumbers.Contains( randomUserNumber ) )
     {
-        int winAmmo = CalculateAmount( bet, randomUserNumber );
-        Console.WriteLine( $"Congratulations! You have won {winAmmo}.\nRemember, the casino does not spare the lucky ones.\n" );
-        return winAmmo;
+        int winAmount = CalculateAmount( bet, randomUserNumber );
+        Console.WriteLine( $"Congratulations! You have won {winAmount}.\nRemember, the casino does not spare the lucky ones.\n" );
+        return winAmount;
     }
     else
     {
@@ -123,16 +123,14 @@ static int StartGame( int bet )
     }
 }
 
-static int GetUserBet( ref int balance )
+static int GetUserBet( int balance )
 {
     Console.Write( "Enter your bet. It will be deducted from the total balance: " );
     string userBet = Console.ReadLine();
     if ( int.TryParse( userBet, out int bet ) )
     {
-        balance -= bet;
-        if ( balance < 0 | bet <= 0 )
+        if ( bet > balance || bet <= 0 )
         {
-            balance += bet;
             throw new Exception( $"Invalid bet value: {bet}" );
         }
         else
@@ -146,15 +144,15 @@ static int GetUserBet( ref int balance )
     }
 }
 
-static int SetRandomNumber()
+static int GetRandomNumber()
 {
     Random random = new Random();
-    int randomNumber = random.Next( 0, 21 );
+    int randomNumber = random.Next( 1, 21 );
     return randomNumber;
 }
 
 static int CalculateAmount( int bet, int randomUserNumber )
 {
-    double amountDbl = ( bet * ( 1 + multiplicator ) * ( randomUserNumber % 17 ) );
+    double amountDbl = ( bet * ( 1 + victoryMultiplicator ) * ( randomUserNumber % 17 ) );
     return Convert.ToInt32( amountDbl );
 }
