@@ -11,6 +11,7 @@ using Fighters.Models.Races;
 using Fighters.Models.Weapons;
 
 namespace Fighters.Core;
+
 public class GameManager
 {
     private static readonly int botsInGame = 5;
@@ -33,18 +34,42 @@ public class GameManager
     public void RunGame()
     {
         InitializationBots();
-        var opponent = GetOpponent();
-        StartFight(_hero, opponent );
+        IFighter opponent = GetOpponent();
+        Console.WriteLine( StartFight( _hero, opponent ) );
+        _hero.ReturnHeroPoints();
+        RemoveFighterFromList( opponent );
     }
 
     public string StartFight( IFighter userFighter, IFighter computerFighter )
     {
-        while ( !userFighter.IsAlive() || !computerFighter.IsAlive() )
+        int damage;
+        while ( userFighter.IsAlive() && computerFighter.IsAlive() )
         {
-            userFighter.Attack( computerFighter );
-            computerFighter.Attack( userFighter );
+            damage = userFighter.Attack( computerFighter );
+            if ( damage > 0 )
+            {
+                Console.WriteLine( $"{userFighter.Name}({userFighter.GetCurrentHealthPoint()}hp) нанёс {damage} урона {computerFighter.Name}({computerFighter.GetCurrentHealthPoint()}hp)" );
+            }
+            else
+            {
+                Console.WriteLine( $"{computerFighter.Name} увернулся!" );
+            }
+
+            if ( computerFighter.GetCurrentHealthPoint() > 0 )
+            {
+                damage = computerFighter.Attack( userFighter );
+                if ( damage > 0 )
+                {
+                    Console.WriteLine( $"{computerFighter.Name}({computerFighter.GetCurrentHealthPoint()}hp) нанёс {damage} урона {userFighter.Name}({userFighter.GetCurrentHealthPoint()}hp)" );
+                }
+                else
+                {
+                    Console.WriteLine( $"{userFighter.Name} увернулся!" );
+                }
+            }
         }
-        return userFighter.IsAlive() ? $"{userFighter.Name} is won!" : $"{computerFighter.Name} is won!";
+        return userFighter.IsAlive() ? $"{userFighter.Name} победил!" : $"{computerFighter.Name} победил!";
+
     }
 
     public void CreateHero()
@@ -58,6 +83,18 @@ public class GameManager
         _hero = FighterFactory.CreateFighter( fighterClass );
     }
 
+    public void ShowHero()
+    {
+        if ( _hero != null )
+        {
+            Console.WriteLine( _hero );
+        }
+        else
+        {
+            Console.WriteLine( "Вы ещё не создавали своего персонажа. Воспользуйтесь соответствующей опцией!" );
+        }
+    }
+
     public static IRace GetRace()
     {
         Console.WriteLine( """
@@ -68,15 +105,15 @@ public class GameManager
             """ );
         IRace race = new Human();
         string userInput;
-        bool isCorrect = false;
-        while ( !isCorrect )
+        bool IsValid = false;
+        while ( !IsValid )
         {
             userInput = Console.ReadLine();
             bool isParsed = Enum.TryParse( userInput, out Race raceEnum );
             if ( isParsed )
             {
                 race = RaceFactory.CreateRace( raceEnum );
-                isCorrect = true;
+                IsValid = true;
             }
             else
             {
@@ -184,10 +221,12 @@ public class GameManager
     {
         if ( _fighters.Count == 0 )
         {
+            string randomName;
             while ( _fighters.Count != botsInGame )
             {
-                var factory = new FighterFactory( $"bot {_fighters.Count + 1}", RaceFactory.GenerateRndRace(), ArmorFactory.GenerateRndArmor(), WeaponFactory.GenerateRndWeapon() );
-                var fighter = FighterFactory.GenerateRndFighter();
+                randomName = NameRepository.names[ new Random().Next( NameRepository.names.Length ) ];
+                FighterFactory factory = new FighterFactory( randomName, RaceFactory.GenerateRndRace(), ArmorFactory.GenerateRndArmor(), WeaponFactory.GenerateRndWeapon() );
+                IFighter fighter = FighterFactory.GenerateRndFighter();
                 _fighters.Add( fighter );
             }
         }
@@ -196,10 +235,10 @@ public class GameManager
     public static IFighter GetOpponent()
     {
         Console.WriteLine( "Выбери своего оппонента: " );
-        foreach ( var opponent in _fighters )
+        foreach ( IFighter opponent in _fighters )
         {
             int index = _fighters.FindIndex( x => x == opponent );
-            Console.WriteLine( (index + 1) + ") " + opponent );
+            Console.WriteLine( ( index + 1 ) + ") " + opponent );
         }
         Console.Write( "Введи номер противника: " );
         int value = 0;

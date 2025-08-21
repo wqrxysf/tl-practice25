@@ -1,4 +1,5 @@
 ﻿namespace Fighters.Models.Armors;
+
 public enum Armor
 {
     NoArmor = 1,

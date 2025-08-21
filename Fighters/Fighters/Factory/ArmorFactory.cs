@@ -1,6 +1,7 @@
 ﻿using Fighters.Models.Armors;
 
 namespace Fighters.Factory;
+
 public class ArmorFactory
 {
     public static IArmor CreateArmor( Armor armor )

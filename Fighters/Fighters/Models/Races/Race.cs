@@ -1,4 +1,5 @@
 ﻿namespace Fighters.Models.Races;
+
 public enum Race
 {
     Human = 1,

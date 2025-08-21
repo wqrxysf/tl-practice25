@@ -4,6 +4,7 @@ using Fighters.Models.Races;
 using Fighters.Models.Weapons;
 
 namespace Fighters.Factory;
+
 public class FighterFactory
 {
     public FighterFactory( string name, IRace race, IArmor armor, IWeapon weapon )

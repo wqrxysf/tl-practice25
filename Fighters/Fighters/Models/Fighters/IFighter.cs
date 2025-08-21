@@ -4,6 +4,7 @@ using Fighters.Models.Races;
 using Fighters.Models.Weapons;
 
 namespace Fighters.Models.Fighters;
+
 public interface IFighter
 {
     public string Name { get; }
@@ -15,12 +16,13 @@ public interface IFighter
     public int GetCurrentHealthPoint();
     public int GetMaxArmorPoint();
     public int GetCurrentArmorPoint();
+    public void ReturnHeroPoints();
 
     public int CalculateDamage();
     public int CalculateLuckyDamage();
     public bool IsDodge();
 
-    public void TakeDamage( int damage );
+    public bool TakeDamage( int damage );
 
     public bool IsAlive();
 

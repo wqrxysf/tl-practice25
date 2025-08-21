@@ -1,4 +1,5 @@
 ﻿namespace Fighters.Models.Weapons;
+
 public interface IWeapon
 {
     string WeaponName { get; }

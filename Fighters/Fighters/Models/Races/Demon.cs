@@ -1,4 +1,5 @@
 ﻿namespace Fighters.Models.Races;
+
 public class Demon : IRace
 {
     public int RaceDamage => 1;
@@ -8,4 +9,11 @@ public class Demon : IRace
     public int RaceDodgeDamage => 80;
 
     public int RaceLuck => 5;
+
+    public string RaceTitle = "Демон";
+
+    public override string ToString()
+    {
+        return RaceTitle;
+    }
 }

@@ -1,6 +1,7 @@
 ﻿using Fighters.Models.Races;
 
 namespace Fighters.Factory;
+
 public class RaceFactory
 {
     public static IRace CreateRace( Race race )

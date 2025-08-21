@@ -1,4 +1,5 @@
 ﻿namespace Fighters.Models.Fighters;
+
 public enum Fighter
 {
     Stranger = 1,

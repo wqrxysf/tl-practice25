@@ -1,4 +1,7 @@
-﻿namespace Fighters.Models.Armors;
+﻿using System.Xml.Linq;
+
+namespace Fighters.Models.Armors;
+
 public interface IArmor
 {
     string ArmorTitle { get; }

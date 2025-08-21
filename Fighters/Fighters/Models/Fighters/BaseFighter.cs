@@ -6,6 +6,7 @@ using Fighters.Models.Races;
 using Fighters.Models.Weapons;
 
 namespace Fighters.Models.Fighters;
+
 public abstract class BaseFighter : IFighter
 {
     public string Name { get; private set; }
@@ -17,8 +18,10 @@ public abstract class BaseFighter : IFighter
     protected IArmor _armor;
     protected IWeapon _weapon;
 
-    protected int _currentHealthPoint;
-    protected int _currentArmorPoint;
+    protected int CurrentHealthPoint;
+    protected int CurrentArmorPoint;
+
+
 
     protected virtual int ClassHealthPoint => 0;
     protected virtual int ClassDamage => 0;
@@ -34,8 +37,8 @@ public abstract class BaseFighter : IFighter
         _race = race;
         _armor = armor;
         _weapon = weapon;
-        _currentHealthPoint = GetMaxHealthPoint();
-        _currentArmorPoint = GetCurrentArmorPoint();
+        CurrentHealthPoint = GetMaxHealthPoint();
+        CurrentArmorPoint = GetCurrentArmorPoint();
     }
 
     public override string ToString()
@@ -46,29 +49,36 @@ public abstract class BaseFighter : IFighter
     public int Attack( IFighter opponent )
     {
         int damage = CalculateDamage();
-        opponent.TakeDamage( damage );
-        return damage;
+        bool dodge = opponent.TakeDamage( damage );
+        if ( dodge )
+        {
+            return damage;
+        }
+        return 0;
+
     }
 
-    public void TakeDamage( int damage )
+    public bool TakeDamage( int damage )
     {
         if ( !IsDodge() )
         {
-            if ( _currentArmorPoint + _currentHealthPoint < damage )
+            if ( CurrentArmorPoint + CurrentHealthPoint < damage )
             {
-                _currentHealthPoint = 0;
-                _currentArmorPoint = 0;
+                CurrentHealthPoint = 0;
+                CurrentArmorPoint = 0;
             }
             else
             {
-                _currentArmorPoint = _currentArmorPoint < damage ? 0 : _currentArmorPoint - damage;
-                if ( _currentArmorPoint == 0 )
+                CurrentArmorPoint = CurrentArmorPoint < damage ? 0 : CurrentArmorPoint - damage;
+                if ( CurrentArmorPoint == 0 )
                 {
-                    damage -= _currentArmorPoint;
+                    damage -= CurrentArmorPoint;
                 }
-                _currentHealthPoint -= damage;
+                CurrentHealthPoint -= damage;
             }
+            return true;
         }
+        return false;
     }
 
     public int CalculateDamage()
@@ -90,7 +100,7 @@ public abstract class BaseFighter : IFighter
 
     public int GetCurrentHealthPoint()
     {
-        return _currentHealthPoint;
+        return CurrentHealthPoint;
     }
 
     public int GetMaxHealthPoint()
@@ -100,7 +110,7 @@ public abstract class BaseFighter : IFighter
 
     public int GetCurrentArmorPoint()
     {
-        return _currentArmorPoint;
+        return CurrentArmorPoint;
     }
 
     public int GetMaxArmorPoint()
@@ -110,6 +120,12 @@ public abstract class BaseFighter : IFighter
 
     public bool IsAlive()
     {
-        return _currentHealthPoint > 0;
+        return CurrentHealthPoint > 0 ? true : false;
+    }
+
+    public void ReturnHeroPoints()
+    {
+        CurrentHealthPoint = GetMaxHealthPoint();
+        CurrentArmorPoint = GetCurrentArmorPoint();
     }
 }

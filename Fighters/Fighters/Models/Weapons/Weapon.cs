@@ -1,4 +1,5 @@
 ﻿namespace Fighters.Models.Weapons;
+
 public enum Weapon
 {
     Fists = 1,

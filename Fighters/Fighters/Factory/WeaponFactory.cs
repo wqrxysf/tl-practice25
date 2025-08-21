@@ -1,6 +1,7 @@
 ﻿using Fighters.Models.Weapons;
 
 namespace Fighters.Factory;
+
 public class WeaponFactory
 {
     public static IWeapon CreateWeapon( Weapon weapon )
