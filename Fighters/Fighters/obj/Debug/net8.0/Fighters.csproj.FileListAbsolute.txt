@@ -1,0 +1,14 @@
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\bin\Debug\net8.0\Fighters.exe
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\bin\Debug\net8.0\Fighters.deps.json
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\bin\Debug\net8.0\Fighters.runtimeconfig.json
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\bin\Debug\net8.0\Fighters.dll
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\bin\Debug\net8.0\Fighters.pdb
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\Fighters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\Fighters.AssemblyInfoInputs.cache
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\Fighters.AssemblyInfo.cs
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\Fighters.csproj.CoreCompileInputs.cache
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\Fighters.dll
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\refint\Fighters.dll
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\Fighters.pdb
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\Fighters.genruntimeconfig.cache
+C:\Users\wqrxysf\source\repos\Fighters\Fighters\obj\Debug\net8.0\ref\Fighters.dll

@@ -10,6 +10,7 @@ const string helloMessage = """
     Welcome to the store "magazin na divane"!
     Our prices are lower than on "Wildberries"
                  ====
+
     """;
 const string menuMessage = """
         M E N U
@@ -17,9 +18,9 @@ const string menuMessage = """
     2 - Exit;
     """;
 
-Operation operation = Operation.Initial;
+Operation operation = Operation.Unknown;
 PrintHelloMessage();
-while ( operation != Operation.Exit )
+do
 {
     PrintMenu();
     try
@@ -35,12 +36,11 @@ while ( operation != Operation.Exit )
     {
         Console.WriteLine( $"ERROR FOUND! {e}" );
     }
-}
+} while ( operation != Operation.Exit );
 
 static void PrintHelloMessage()
 {
     Console.WriteLine( helloMessage );
-    Console.WriteLine();
 }
 
 static void PrintMenu()
@@ -53,14 +53,13 @@ static Operation ReadOperation()
     string userOperation = Console.ReadLine();
     return ( Enum.TryParse( userOperation, out Operation operation ) ) ? operation : Operation.Unknown;
 }
+
 void HandleOperations( Operation operation )
 {
     switch ( operation )
     {
-        case Operation.Initial:
-            return;
         case Operation.Buy:
-            PlacingOrder();
+            PlaceOrder();
             break;
         case Operation.Exit:
             Console.WriteLine( "Goodbye. We'll be waiting for you again." );
@@ -70,35 +69,30 @@ void HandleOperations( Operation operation )
     }
 }
 
-static void PlacingOrder()
+static void PlaceOrder()
 {
-    Order order = new Order();
-    order = GetUserData();
+    Order order = GetUserData();
     ConfirmOrder( order );
 }
 
+
 static Order GetUserData()
 {
-    Order userOrder = new Order();
     Console.WriteLine( "Enter product name: " );
-    var userProductName = Console.ReadLine();
-    userOrder.product = userProductName;
+    string userProductName = Console.ReadLine();
+
     Console.WriteLine( "Enter product quantity: " );
-    var userQuantity = Console.ReadLine();
-    if ( !IsCorrectInt( userQuantity ) )
-    {
-        throw new Exception( $"{userQuantity} - is not a number" );
-    }
-    int quantity = int.Parse( userQuantity );
-    userOrder.quantity = quantity;
+    int quantity = int.Parse( Console.ReadLine() );
+
     Console.WriteLine( "Enter your name: " );
-    var userName = Console.ReadLine();
-    userOrder.name = userName;
-    Console.WriteLine( "Enter delivery adress: " );
-    var userAdress = Console.ReadLine();
-    userOrder.adress = userAdress;
-    return userOrder;
+    string userName = Console.ReadLine();
+
+    Console.WriteLine( "Enter delivery address: " );
+    string userAddress = Console.ReadLine();
+
+    return new Order( userProductName, quantity, userName, userAddress );
 }
+
 
 static bool IsCorrectInt( string userInt )
 {
@@ -107,26 +101,26 @@ static bool IsCorrectInt( string userInt )
 
 static void ConfirmOrder( Order order )
 {
-    Console.WriteLine( $"Hello, {order.name}!\nYou ordered {order.quantity} {order.product} to the adress: {order.adress}.\nIs it correct? Please enter your name when confirming your order. Otherwise, your order will be cancelled: " );
+    Console.WriteLine(
+        $"Hello, {order.Name}!\n" +
+        $"You ordered {order.Quantity} {order.Product} to the address: {order.Address}.\n" +
+        "Is it correct? Please enter your name when confirming your order. Otherwise, your order will be cancelled: "
+    );
+
     string userData = Console.ReadLine();
-    if ( userData == order.name )
+    if ( userData == order.Name )
     {
-        PrintDeliveryMessage( order.adress );
+        PrintDeliveryMessage( order.Address );
         return;
     }
+
     Console.WriteLine( "The system recognized your answer as negative.\nYour order was cancelled, you can make it again." );
-    return;
 }
+
 
 static void PrintDeliveryMessage( string adress )
 {
     DateTime currentDayInUtc = DateTime.Today.AddDays( deliveryTimeInDays );
     Console.WriteLine( $"Thank you for your order! It will be shipped {currentDayInUtc.ToLongDateString()} to the following address: {adress}" );
 }
-struct Order
-{
-    public string product;
-    public int quantity;
-    public string name;
-    public string adress;
-}
+public record Order( string Product, int Quantity, string Name, string Address );

@@ -1,0 +1,685 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\fighters\\basefighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\basefighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\fighters\\fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\fighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\factory\\fighterfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\factory\\fighterfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\factory\\weaponfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\factory\\weaponfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\factory\\racefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\factory\\racefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\factory\\armorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\factory\\armorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\armors\\iarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\armors\\iarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\armors\\bulletproofvest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\armors\\bulletproofvest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\armors\\armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\armors\\armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\races\\race.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\races\\race.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\fighters\\stranger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\stranger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\fighters\\marquis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\marquis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\fighters\\lord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\lord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\fighters\\baron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\baron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\races\\demon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\races\\demon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\races\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\races\\human.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\races\\irace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\races\\irace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\races\\orc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\races\\orc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\weapons\\stick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\weapons\\stick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\weapons\\spear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\weapons\\spear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\weapons\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\weapons\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\weapons\\fists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\weapons\\fists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\weapons\\ak47.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\weapons\\ak47.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\armors\\noarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\armors\\noarmor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\armors\\iron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\armors\\iron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\armors\\coat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\armors\\coat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\armors\\chain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\armors\\chain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|c:\\users\\wqrxysf\\source\\repos\\fighters\\fighters\\models\\fighters\\ifighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{624CC490-B61D-4532-B5F7-9A7B459BD28F}|Fighters\\Fighters.csproj|solutionrelative:fighters\\models\\fighters\\ifighter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 32,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Program.cs",
+              "RelativeDocumentMoniker": "Fighters\\Program.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Program.cs",
+              "RelativeToolTip": "Fighters\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:50:33.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Core\\GameManager.cs",
+              "RelativeDocumentMoniker": "Fighters\\Core\\GameManager.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Core\\GameManager.cs",
+              "RelativeToolTip": "Fighters\\Core\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:41:33.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseFighter.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\BaseFighter.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\BaseFighter.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\BaseFighter.cs",
+              "RelativeToolTip": "Fighters\\Models\\Fighters\\BaseFighter.cs",
+              "ViewState": "AgIAAB4AAADgmZmZmRk3wB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:25:12.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FighterFactory.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\FighterFactory.cs",
+              "RelativeDocumentMoniker": "Fighters\\Factory\\FighterFactory.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\FighterFactory.cs",
+              "RelativeToolTip": "Fighters\\Factory\\FighterFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:16:43.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeaponFactory.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\WeaponFactory.cs",
+              "RelativeDocumentMoniker": "Fighters\\Factory\\WeaponFactory.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\WeaponFactory.cs",
+              "RelativeToolTip": "Fighters\\Factory\\WeaponFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:13:34.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RaceFactory.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\RaceFactory.cs",
+              "RelativeDocumentMoniker": "Fighters\\Factory\\RaceFactory.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\RaceFactory.cs",
+              "RelativeToolTip": "Fighters\\Factory\\RaceFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:10:11.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ArmorFactory.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\ArmorFactory.cs",
+              "RelativeDocumentMoniker": "Fighters\\Factory\\ArmorFactory.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Factory\\ArmorFactory.cs",
+              "RelativeToolTip": "Fighters\\Factory\\ArmorFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:02:27.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IArmor.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\IArmor.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Armors\\IArmor.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\IArmor.cs",
+              "RelativeToolTip": "Fighters\\Models\\Armors\\IArmor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T13:50:45.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fighter.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Fighter.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\Fighter.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Fighter.cs",
+              "RelativeToolTip": "Fighters\\Models\\Fighters\\Fighter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:59:41.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BulletproofVest.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\BulletproofVest.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Armors\\BulletproofVest.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\BulletproofVest.cs",
+              "RelativeToolTip": "Fighters\\Models\\Armors\\BulletproofVest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T13:56:51.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Armor.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Armor.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Armors\\Armor.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Armor.cs",
+              "RelativeToolTip": "Fighters\\Models\\Armors\\Armor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:58:12.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Weapon.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Weapons\\Weapon.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Weapon.cs",
+              "RelativeToolTip": "Fighters\\Models\\Weapons\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:01:11.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Race.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Race.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Races\\Race.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Race.cs",
+              "RelativeToolTip": "Fighters\\Models\\Races\\Race.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T16:00:39.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Stranger.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Stranger.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\Stranger.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Stranger.cs",
+              "RelativeToolTip": "Fighters\\Models\\Fighters\\Stranger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:45:52.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Marquis.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Marquis.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\Marquis.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Marquis.cs",
+              "RelativeToolTip": "Fighters\\Models\\Fighters\\Marquis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:44:56.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Lord.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Lord.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\Lord.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Lord.cs",
+              "RelativeToolTip": "Fighters\\Models\\Fighters\\Lord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:44:21.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Fists.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Fists.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Weapons\\Fists.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Fists.cs",
+              "RelativeToolTip": "Fighters\\Models\\Weapons\\Fists.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:04:08.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IWeapon.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\IWeapon.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Weapons\\IWeapon.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\IWeapon.cs",
+              "RelativeToolTip": "Fighters\\Models\\Weapons\\IWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:00:07.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Spear.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Spear.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Weapons\\Spear.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Spear.cs",
+              "RelativeToolTip": "Fighters\\Models\\Weapons\\Spear.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:04:53.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Stick.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Stick.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Weapons\\Stick.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Stick.cs",
+              "RelativeToolTip": "Fighters\\Models\\Weapons\\Stick.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:03:27.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Orc.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Orc.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Races\\Orc.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Orc.cs",
+              "RelativeToolTip": "Fighters\\Models\\Races\\Orc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:13:14.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IRace.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\IRace.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Races\\IRace.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\IRace.cs",
+              "RelativeToolTip": "Fighters\\Models\\Races\\IRace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:07:04.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Baron.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Baron.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\Baron.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\Baron.cs",
+              "RelativeToolTip": "Fighters\\Models\\Fighters\\Baron.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T15:37:03.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Ak47.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Ak47.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Weapons\\Ak47.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Weapons\\Ak47.cs",
+              "RelativeToolTip": "Fighters\\Models\\Weapons\\Ak47.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:02:37.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Human.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Human.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Races\\Human.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Human.cs",
+              "RelativeToolTip": "Fighters\\Models\\Races\\Human.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:12:32.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Demon.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Demon.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Races\\Demon.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Races\\Demon.cs",
+              "RelativeToolTip": "Fighters\\Models\\Races\\Demon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:10:56.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "NoArmor.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\NoArmor.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Armors\\NoArmor.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\NoArmor.cs",
+              "RelativeToolTip": "Fighters\\Models\\Armors\\NoArmor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T13:53:58.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Iron.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Iron.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Armors\\Iron.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Iron.cs",
+              "RelativeToolTip": "Fighters\\Models\\Armors\\Iron.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T13:58:41.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Coat.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Coat.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Armors\\Coat.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Coat.cs",
+              "RelativeToolTip": "Fighters\\Models\\Armors\\Coat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T13:55:50.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Chain.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Chain.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Armors\\Chain.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Armors\\Chain.cs",
+              "RelativeToolTip": "Fighters\\Models\\Armors\\Chain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T13:53:05.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IFighter.cs",
+              "DocumentMoniker": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\IFighter.cs",
+              "RelativeDocumentMoniker": "Fighters\\Models\\Fighters\\IFighter.cs",
+              "ToolTip": "C:\\Users\\wqrxysf\\source\\repos\\Fighters\\Fighters\\Models\\Fighters\\IFighter.cs",
+              "RelativeToolTip": "Fighters\\Models\\Fighters\\IFighter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T14:14:39.086Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
