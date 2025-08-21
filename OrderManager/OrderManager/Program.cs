@@ -72,7 +72,7 @@ void HandleOperations( Operation operation )
 static void PlaceOrder()
 {
     Order order = GetUserData();
-    ConfirmOrder( order );
+    userConfirmation( order );
 }
 
 
@@ -99,7 +99,7 @@ static bool IsCorrectInt( string userInt )
     return int.TryParse( userInt, out int correctInt );
 }
 
-static void ConfirmOrder( Order order )
+static void userConfirmation( Order order )
 {
     Console.WriteLine(
         $"Hello, {order.Name}!\n" +
@@ -123,4 +123,4 @@ static void PrintDeliveryMessage( string adress )
     DateTime currentDayInUtc = DateTime.Today.AddDays( deliveryTimeInDays );
     Console.WriteLine( $"Thank you for your order! It will be shipped {currentDayInUtc.ToLongDateString()} to the following address: {adress}" );
 }
-public record Order( string Product, int Quantity, string Name, string Address );
+/*public record Order( string Product, int Quantity, string Name, string Address );*/
