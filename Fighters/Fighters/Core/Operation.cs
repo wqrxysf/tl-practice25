@@ -1,5 +1,5 @@
 ﻿namespace Fighters.Core;
-public enum Operations
+public enum Operation
 {
     Internal = 0,
     CreateHero = 1,

@@ -23,7 +23,7 @@ public class ArmorFactory
         }
     }
 
-    public static IArmor GenerateRndArmor()
+    public static IArmor GenerateRandomArmor()
     {
         Random rnd = new Random();
         int rndArmor = rnd.Next( 0, 5 );

@@ -40,6 +40,39 @@ public class GameManager
         RemoveFighterFromList( opponent );
     }
 
+    public void HandleOperation()
+    {
+        UserOperationHandler handler = new UserOperationHandler();
+        Operation operation = Operation.Internal;
+        while ( operation != Operation.Exit )
+        {
+            operation = handler.GetCommand();
+            switch ( operation )
+            {
+                case Operation.CreateHero:
+                    CreateHero();
+                    break;
+                case Operation.ShowHero:
+                    ShowHero();
+                    break;
+                case Operation.StartFight:
+                    if ( _hero != null )
+                    {
+                        RunGame();
+                    }
+                    else
+                    {
+                        Console.WriteLine( "У-упс... Вы ещё не создали персонажа!" );
+                    }
+                    break;
+                case Operation.Exit:
+                    break;
+                default:
+                    throw new Exception();
+            }
+        }
+    }
+
     public string StartFight( IFighter userFighter, IFighter computerFighter )
     {
         int damage;
@@ -219,14 +252,14 @@ public class GameManager
 
     public static void InitializationBots()
     {
+        string randomName;
         if ( _fighters.Count == 0 )
         {
-            string randomName;
             while ( _fighters.Count != botsInGame )
             {
                 randomName = NameRepository.names[ new Random().Next( NameRepository.names.Length ) ];
-                FighterFactory factory = new FighterFactory( randomName, RaceFactory.GenerateRndRace(), ArmorFactory.GenerateRndArmor(), WeaponFactory.GenerateRndWeapon() );
-                IFighter fighter = FighterFactory.GenerateRndFighter();
+                FighterFactory factory = new FighterFactory( randomName, RaceFactory.GenerateRandomRace(), ArmorFactory.GenerateRandomArmor(), WeaponFactory.GenerateRandomWeapon() );
+                IFighter fighter = FighterFactory.GenerateRandomFighter();
                 _fighters.Add( fighter );
             }
         }

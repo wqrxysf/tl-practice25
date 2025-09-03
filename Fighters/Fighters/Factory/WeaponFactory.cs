@@ -21,7 +21,7 @@ public class WeaponFactory
         }
     }
 
-    public static IWeapon GenerateRndWeapon()
+    public static IWeapon GenerateRandomWeapon()
     {
         Random rnd = new Random();
         int rndWeapon = rnd.Next( 0, 4 );

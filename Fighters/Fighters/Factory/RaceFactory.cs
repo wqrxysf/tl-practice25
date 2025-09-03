@@ -19,7 +19,7 @@ public class RaceFactory
         }
     }
 
-    public static IRace GenerateRndRace()
+    public static IRace GenerateRandomRace()
     {
         Random rnd = new Random();
         int rndRace = rnd.Next( 0, 3 );

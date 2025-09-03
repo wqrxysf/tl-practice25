@@ -3,7 +3,6 @@
 public class Spear : IWeapon
 {
     public string WeaponName => "Копьё";
-
     public int WeaponDamage => 8;
 
     public override string ToString()

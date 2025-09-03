@@ -8,13 +8,12 @@ public class Program
     {
         try
         {
-            GameManager gm = new GameManager();
-            Handler handler = new Handler();
-            handler.HandleOperation( gm );
+            GameManager GameManager = new GameManager();
+            GameManager.HandleOperation();
         }
-        catch ( Exception ex )
+        catch ( Exception exception )
         {
-            Console.WriteLine( $"Error! {ex}" );
+            Console.WriteLine( $"Error! {exception}" );
         }
 
     }

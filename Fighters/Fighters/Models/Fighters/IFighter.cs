@@ -20,7 +20,7 @@ public interface IFighter
 
     public int CalculateDamage();
     public int CalculateLuckyDamage();
-    public bool IsDodge();
+    public bool CanDodge();
 
     public bool TakeDamage( int damage );
 

@@ -21,8 +21,6 @@ public abstract class BaseFighter : IFighter
     protected int CurrentHealthPoint;
     protected int CurrentArmorPoint;
 
-
-
     protected virtual int ClassHealthPoint => 0;
     protected virtual int ClassDamage => 0;
     protected virtual int ClassArmorPoint => 0;
@@ -49,8 +47,8 @@ public abstract class BaseFighter : IFighter
     public int Attack( IFighter opponent )
     {
         int damage = CalculateDamage();
-        bool dodge = opponent.TakeDamage( damage );
-        if ( dodge )
+        bool wasTaken = opponent.TakeDamage( damage );
+        if ( wasTaken )
         {
             return damage;
         }
@@ -60,7 +58,7 @@ public abstract class BaseFighter : IFighter
 
     public bool TakeDamage( int damage )
     {
-        if ( !IsDodge() )
+        if ( !CanDodge() )
         {
             if ( CurrentArmorPoint + CurrentHealthPoint < damage )
             {
@@ -92,7 +90,7 @@ public abstract class BaseFighter : IFighter
         return rndNumber > _race.RaceLuck ? ClassLuckyDamage : 0;
     }
 
-    public bool IsDodge()
+    public bool CanDodge()
     {
         int rndNumber = rnd.Next( 1, 101 );
         return rndNumber > _race.RaceDodgeDamage ? false : true;

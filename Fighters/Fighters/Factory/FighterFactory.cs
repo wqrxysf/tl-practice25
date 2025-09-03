@@ -37,7 +37,7 @@ public class FighterFactory
         }
     }
 
-    public static IFighter GenerateRndFighter()
+    public static IFighter GenerateRandomFighter()
     {
         Random rnd = new Random();
         int rndFighter = rnd.Next( 0, 4 );

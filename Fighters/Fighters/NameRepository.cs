@@ -1,6 +1,6 @@
 ﻿public static class NameRepository
 {
-    public static readonly string[] names =
+    public static readonly string[] Names =
     {
         "Arthur",
         "Roland",
