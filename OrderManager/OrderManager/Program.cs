@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-using System.Globalization;
-using System.Xml.Linq;
-using OrderManager;
+﻿using OrderManager;
 
 const int deliveryTimeInDays = 3;
 const string helloMessage = """
@@ -75,7 +72,6 @@ static void PlaceOrder()
     ConfirmOrder( order );
 }
 
-
 static Order GetUserData()
 {
     Console.WriteLine( "Enter product name: " );
@@ -92,7 +88,6 @@ static Order GetUserData()
 
     return new Order( userProductName, quantity, userName, userAddress );
 }
-
 
 static bool IsCorrectInt( string userInt )
 {
@@ -116,7 +111,6 @@ static void ConfirmOrder( Order order )
 
     Console.WriteLine( "The system recognized your answer as negative.\nYour order was cancelled, you can make it again." );
 }
-
 
 static void PrintDeliveryMessage( string adress )
 {
