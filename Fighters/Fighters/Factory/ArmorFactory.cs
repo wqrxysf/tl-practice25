@@ -29,4 +29,15 @@ public class ArmorFactory
         int rndArmor = rnd.Next( 0, 5 );
         return CreateArmor( ( Armor )rndArmor );
     }
+
+    public static string GetArmorList()
+    {
+        return """
+            1 - Без одежды;
+            2 - Плащ;
+            3 - Кольчужная мантия;
+            4 - Железные доспехи;
+            5 - Пуленепробиваемый бронежилет;
+            """;
+    }
 }

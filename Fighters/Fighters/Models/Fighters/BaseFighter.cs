@@ -1,7 +1,4 @@
-﻿using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
-using System.Xml.Linq;
-using Fighters.Models.Armors;
+﻿using Fighters.Models.Armors;
 using Fighters.Models.Races;
 using Fighters.Models.Weapons;
 

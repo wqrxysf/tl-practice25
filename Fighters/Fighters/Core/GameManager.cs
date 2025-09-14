@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Fighters.Factory;
+﻿using Fighters.Factory;
 using Fighters.Models.Armors;
 using Fighters.Models.Fighters;
 using Fighters.Models.Races;
@@ -130,12 +124,7 @@ public class GameManager
 
     public static IRace GetRace()
     {
-        Console.WriteLine( """
-            Выберите расу своего персонажа:
-            1 - Человек;
-            2 - Орк;
-            3 - Демон;
-            """ );
+        Console.WriteLine( $"Выберите расу своего персонажа:\n {RaceFactory.GetRaceList()}" );
         IRace race = new Human();
         string userInput;
         bool IsValid = false;
@@ -158,13 +147,7 @@ public class GameManager
 
     public static Fighter GetClass()
     {
-        Console.WriteLine( """
-            Выберите класс своего персонажа:
-            1 - Чужеземец;
-            2 - Барон;
-            3 - Лорд;
-            4 - Маркиз;
-            """ );
+        Console.WriteLine( $"Выберите класс своего персонажа: \n{FighterFactory.GetFighterClassList()}" );
         Fighter fighterClass = Fighter.Stranger;
         string userInput;
         bool isCorrect = false;
@@ -186,13 +169,7 @@ public class GameManager
 
     public static IWeapon GetWeapon()
     {
-        Console.WriteLine( """
-            Выберите оружие для своего персонажа:
-            1 - Кулаки;
-            2 - Палка;
-            3 - Копьё;
-            4 - Автомат Калашникова;
-            """ );
+        Console.WriteLine( $"Выберите оружие для своего персонажа: \n{WeaponFactory.GetWeaponList()}" );
         IWeapon weapon = new Fists();
         string userInput;
         bool isCorrect = false;
@@ -215,14 +192,7 @@ public class GameManager
 
     public static IArmor GetArmor()
     {
-        Console.WriteLine( """
-            Выберите одеяние для своего персонажа:
-            1 - Без одежды;
-            2 - Плащ;
-            3 - Кольчужная мантия;
-            4 - Железные доспехи;
-            5 - Пуленепробиваемый бронежилет;
-            """ );
+        Console.WriteLine( $" Выберите одеяние для своего персонажа: \n{ArmorFactory.GetArmorList()}" );
         IArmor armor = new NoArmor();
         string userInput;
         bool isCorrect = false;
@@ -247,6 +217,11 @@ public class GameManager
     {
         Console.Write( "Введите имя своего персонажа: " );
         string name = Console.ReadLine();
+        if ( string.IsNullOrWhiteSpace( name ) )
+        {
+            name = NameRepository.names[ new Random().Next( NameRepository.names.Length ) ];
+            Console.WriteLine( $"У-у-пс... Похоже, вы забыли ввести имя. Вашему персонажу было присвоено случайное имя: {name}" );
+        }
         return name;
     }
 

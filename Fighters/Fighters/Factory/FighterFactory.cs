@@ -18,7 +18,6 @@ public class FighterFactory
     private static IArmor _armor;
     private static IWeapon _weapon;
     private static IRace _race;
-    private Fighter _type;
 
     public static IFighter CreateFighter( Fighter fighter )
     {
@@ -42,5 +41,15 @@ public class FighterFactory
         Random rnd = new Random();
         int rndFighter = rnd.Next( 0, 4 );
         return CreateFighter( ( Fighter )rndFighter );
+    }
+
+    public static string GetFighterClassList()
+    {
+        return """
+            1 - Чужеземец;
+            2 - Барон;
+            3 - Лорд;
+            4 - Маркиз;
+            """;
     }
 }

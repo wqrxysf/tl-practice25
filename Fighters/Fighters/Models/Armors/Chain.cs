@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace Fighters.Models.Armors;
+﻿namespace Fighters.Models.Armors;
 
 public class Chain : IArmor
 {

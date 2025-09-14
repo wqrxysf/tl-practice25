@@ -27,4 +27,14 @@ public class WeaponFactory
         int rndWeapon = rnd.Next( 0, 4 );
         return CreateWeapon( ( Weapon )rndWeapon );
     }
+
+    public static string GetWeaponList()
+    {
+        return """
+            1 - Кулаки;
+            2 - Палка;
+            3 - Копьё;
+            4 - Автомат Калашникова;
+            """;
+    }
 }

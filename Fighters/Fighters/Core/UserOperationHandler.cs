@@ -1,10 +1,7 @@
-﻿using Fighters.Models.Fighters;
-
-namespace Fighters.Core;
+﻿namespace Fighters.Core;
 
 public class UserOperationHandler
 {
-    private IFighter? _hero = null;
     private const string operationMenu = """
         1 - Создать нового персонажа;
         2 - Посмотреть своего персонажа;

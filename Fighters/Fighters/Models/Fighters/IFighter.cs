@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Fighters.Models.Armors;
+﻿using Fighters.Models.Armors;
 using Fighters.Models.Races;
 using Fighters.Models.Weapons;
 

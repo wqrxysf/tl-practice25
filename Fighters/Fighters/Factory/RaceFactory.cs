@@ -25,4 +25,13 @@ public class RaceFactory
         int rndRace = rnd.Next( 0, 3 );
         return CreateRace( ( Race )rndRace );
     }
+
+    public static string GetRaceList()
+    {
+        return """
+            1 - Человек;
+            2 - Орк;
+            3 - Демон;
+            """;
+    }
 }
